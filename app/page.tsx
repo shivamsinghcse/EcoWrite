@@ -1,113 +1,105 @@
 import Image from "next/image";
+import { Navbar } from "./components/Navbar";
+import Carousel from "./components/Carousel";
+import penImage from "../images/8bd8ca9a-9a64-412b-9ab4-010ee945f909.png";
+import brownBox from "../images/4511.jpg";
+import { Product } from "./components/Product";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">app/page.tsx</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+    <>
+      <Navbar></Navbar>
+      <Carousel></Carousel>
+      <div className="grid md:grid-cols-2 sm:grid-cols-1 mx-10 my-8 md:h-[550px] overflow-hidden ">
+        <div className="">
+          <h1 className="text-2xl">
+            Welcome to <b className="text-green-600">EcoWrite</b>
+          </h1>
+          <p className="text-pretty my-5 bg-green-600 p-10 rounded-2xl text-white">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, vel
+            at. Magni temporibus voluptatibus provident fugit et molestias
+            earum, eveniet facere fugiat? Labore unde molestiae ab, vitae
+            distinctio nihil id quaerat placeat vel obcaecati perspiciatis
+            debitis repellat minima sequi. Voluptatem accusamus cumque corporis
+            reiciendis tenetur amet minima rerum ducimus esse fuga, distinctio
+            expedita! Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Facere, maxime. Iusto veritatis, sed illo cum sunt nulla alias
+            blanditiis officiis. Facere ea animi amet quam aut ad blanditiis,
+            placeat est iusto dolores quia, a enim mollitia voluptates
+            perspiciatis cupiditate fuga deserunt doloremque accusantium numquam
+            nobis? Voluptatum ipsam cupiditate sequi alias repellendus fugiat
+            commodi magni, iste impedit sed vero animi doloremque nostrum
+            beatae, voluptates saepe quasi, at voluptas. Eveniet est veniam
+            repellat, dolor, impedit inventore odio eligendi dolorum provident
+            laborum optio modi rerum perspiciatis! Quis veniam facere quas
+            laborum neque quae commodi hic provident, aspernatur suscipit
+            pariatur sint minima rerum perspiciatis!
+          </p>
+        </div>
+        <div className=" grid items-center justify-center">
+          <Image
+            src={penImage}
+            width={1405}
+            height={1405}
+            className="h-[90%] w-[90%] "
+            alt="Pen image"
+          ></Image>
         </div>
       </div>
-
-      <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-full sm:before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-full sm:after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 before:lg:h-[360px] z-[-1]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
+      <div className="text-center">
+        <h1 className="text-green-700 font-bold text-3xl">Why choose us?</h1>
+        <div className="grid md:grid-cols-2 sm:grid-cols-1 bg-green-600 text-white mx-10 my-5 rounded-xl">
+          <div className="p-5">
+            <Image src={brownBox} alt="Brown box" className="rounded-md"></Image>
+          </div>
+          <div className="p-5">
+            <h2 className="text-xl font-bold">
+              Ecowrite: Sustainable Pens for a Greener Tomorrow
+            </h2>
+            <ul className="text-start list-disc my-5 text-wrap list-inside">
+              <li>
+                <strong>Discover Ecowrite:</strong> Sustainability meets style
+                in our recycled paper pens.
+              </li>
+              <li>
+                <strong>Commitment to a Greener Future:</strong> Ecowrite pens
+                signify a commitment to sustainability.
+              </li>
+              <li>
+                <strong>Crafted from Recycled Paper:</strong> Reduces the demand
+                for new materials, promoting eco-friendliness.
+              </li>
+              <li>
+                <strong>Biodegradable Design with Seeds:</strong> Transforms
+                into plants or flowers when disposed of, closing the waste loop.
+              </li>
+              <li>
+                <strong>Sustainable Manufacturing:</strong> Ecowrite ensures
+                eco-friendly practices from creation to disposal.
+              </li>
+              <li>
+                <strong>Lower Carbon Footprint:</strong> A writing instrument
+                that cares for the environment and contributes to biodiversity.
+              </li>
+              <li>
+                <strong>Conscious Lifestyle Choice:</strong> Choosing Ecowrite
+                is a conscious decision to integrate sustainability into daily
+                life.
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
-
-      <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Docs{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Learn{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Templates{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Explore starter templates for Next.js.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Deploy{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50 text-balance`}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
+      <div className="text-center my-6">
+        <h1 className="text-green-700 font-bold text-3xl">Meet our Products</h1>
+        <Product></Product>
       </div>
-    </main>
+      <div className="text-center">
+        <h1 className="text-green-700 font-bold text-3xl">
+
+        Contact Us
+        </h1>
+        </div>
+    </>
   );
 }
