@@ -1,13 +1,14 @@
-import type { Config } from "tailwindcss"
+// Import the Config type from "tailwindcss/defaultConfig"
+import { Config } from "tailwindcss/defaultConfig";
 
-const config = {
+const config: Config = {
   darkMode: ["class"],
   content: [
     './pages/**/*.{ts,tsx}',
     './components/**/*.{ts,tsx}',
     './app/**/*.{ts,tsx}',
     './src/**/*.{ts,tsx}',
-	],
+  ],
   prefix: "",
   theme: {
     container: {
@@ -18,6 +19,10 @@ const config = {
       },
     },
     extend: {
+      screens: {
+        'sm': '300px',
+        // => @media (min-width: 992px) { ... }
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
@@ -75,6 +80,6 @@ const config = {
     },
   },
   plugins: [require("tailwindcss-animate")],
-} satisfies Config
+};
 
-export default config
+export default config;

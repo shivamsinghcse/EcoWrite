@@ -21,10 +21,10 @@ const productcard = [
 
 export function Product() {
   return (
-    <div className="mx-auto grid w-full max-w-7xl items-center space-y-4 px-2 py-10 md:grid-cols-2 md:gap-6 md:space-y-0 lg:grid-cols-4">
+    <div className="mx-auto flex  w-full max-w-7xl sm:w-full items-center space-y-4 px-2 py-10  md:gap-6 md:space-y-0 overflow-x-scroll  ">
       {productcard.map((item, index) => (
         <>
-          <div key={index} className="rounded-md border group hover:bg-green-800 hover:text-white  duration-200	">
+          <div key={index} className="w-[300px] rounded-md border group hover:bg-green-800 hover:text-white  duration-200	">
             <Image
               src={item.imageLink}
               alt="Laptop"

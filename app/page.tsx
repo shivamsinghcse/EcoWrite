@@ -3,6 +3,7 @@ import { Navbar } from "./components/Navbar";
 import Carousel from "./components/Carousel";
 import penImage from "../images/8bd8ca9a-9a64-412b-9ab4-010ee945f909.png";
 import brownBox from "../images/4511.jpg";
+import arrow from "../images/ed-literacy-app_summary_curve-lg.svg"
 import { Product } from "./components/Product";
 
 export default function Home() {
@@ -11,29 +12,14 @@ export default function Home() {
       <Navbar></Navbar>
       <Carousel></Carousel>
       <div className="grid md:grid-cols-2 sm:grid-cols-1 mx-10 my-8 md:h-[550px] overflow-hidden ">
-        <div className="">
-          <h1 className="text-2xl">
-            Welcome to <b className="text-green-600">EcoWrite</b>
+        <div className="bg-green-600" id='About'>
+          <h1 className="text-2xl p-8">
+            Welcome to <b className="text-white">EcoWrite</b>
           </h1>
-          <p className="text-pretty my-5 bg-green-600 p-10 rounded-2xl text-white">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, vel
-            at. Magni temporibus voluptatibus provident fugit et molestias
-            earum, eveniet facere fugiat? Labore unde molestiae ab, vitae
-            distinctio nihil id quaerat placeat vel obcaecati perspiciatis
-            debitis repellat minima sequi. Voluptatem accusamus cumque corporis
-            reiciendis tenetur amet minima rerum ducimus esse fuga, distinctio
-            expedita! Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Facere, maxime. Iusto veritatis, sed illo cum sunt nulla alias
-            blanditiis officiis. Facere ea animi amet quam aut ad blanditiis,
-            placeat est iusto dolores quia, a enim mollitia voluptates
-            perspiciatis cupiditate fuga deserunt doloremque accusantium numquam
-            nobis? Voluptatum ipsam cupiditate sequi alias repellendus fugiat
-            commodi magni, iste impedit sed vero animi doloremque nostrum
-            beatae, voluptates saepe quasi, at voluptas. Eveniet est veniam
-            repellat, dolor, impedit inventore odio eligendi dolorum provident
-            laborum optio modi rerum perspiciatis! Quis veniam facere quas
-            laborum neque quae commodi hic provident, aspernatur suscipit
-            pariatur sint minima rerum perspiciatis!
+          <p className="text-pretty   p-5 rounded-2xl text-white">
+          Discover Ecowrite, where sustainability meets style. Our recycled paper pens are more than writing tools; they're a commitment to a greener future. Crafted with care, these pens reduce material demand and feature a biodegradable design with seeds that transform into plants, closing the loop on waste.
+
+Sustainability is at our core, from manufacturing to disposal. Choosing Ecowrite is a statement, a conscious decision to integrate sustainability into your daily life. Make a positive impact with every stroke. Choose Ecowrite for a writing experience that leaves a mark on paper, not on the planet.
           </p>
         </div>
         <div className=" grid items-center justify-center">
@@ -56,7 +42,7 @@ export default function Home() {
             <h2 className="text-xl font-bold">
               Ecowrite: Sustainable Pens for a Greener Tomorrow
             </h2>
-            <ul className="text-start list-disc my-5 text-wrap list-inside">
+            <ul className="text-start list-disc my-5 text-wrap list-inside lg:my-16">
               <li>
                 <strong>Discover Ecowrite:</strong> Sustainability meets style
                 in our recycled paper pens.
@@ -91,14 +77,26 @@ export default function Home() {
         </div>
       </div>
       <div className="text-center my-6">
-        <h1 className="text-green-700 font-bold text-3xl">Meet our Products</h1>
+        <h1 className="text-green-700 font-bold text-3xl" id='Product'>Meet our Products</h1>
+        <div className="flex ">
+        <div className="sm:hidden                                   md:block md:w-40 sm:object-cover">
+          <Image src={arrow} alt="arrow"   ></Image>
+        </div>
         <Product></Product>
+        </div>
       </div>
-      <div className="text-center">
-        <h1 className="text-green-700 font-bold text-3xl">
+      <div className="text-center bg-green-700">
+        <h1 className="text-white font-bold text-3xl" id="contact">
 
         Contact Us
         </h1>
+        <div>
+          <b>Email: Order@ecowrite.com</b>
+          <br></br>
+          <b>Mobile No: +91 9532340629</b>
+          <br></br>
+          <b>Made with Love!❤️ Team EcoWrite</b>
+        </div>
         </div>
     </>
   );
