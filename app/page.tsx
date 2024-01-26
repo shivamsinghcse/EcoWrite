@@ -11,12 +11,12 @@ export default function Home() {
     <>
       <Navbar></Navbar>
       <Carousel></Carousel>
-      <div className="grid md:grid-cols-2 sm:grid-cols-1 mx-10 my-8 md:h-[550px] overflow-hidden ">
-        <div className="bg-green-600" id='About'>
+      <div className="grid md:grid-cols-2 sm:grid-cols-1 mx-10 my-8 md:h-[550px] overflow-hidden rounded-2xl ">
+        <div className="bg-green-600  " id='About'>
           <h1 className="text-2xl p-8">
             Welcome to <b className="text-white">EcoWrite</b>
           </h1>
-          <p className="text-pretty   p-5 rounded-2xl text-white">
+          <p className="text-pretty   p-5 text-white">
           Discover Ecowrite, where sustainability meets style. Our recycled paper pens are more than writing tools; they're a commitment to a greener future. Crafted with care, these pens reduce material demand and feature a biodegradable design with seeds that transform into plants, closing the loop on waste.
 
 Sustainability is at our core, from manufacturing to disposal. Choosing Ecowrite is a statement, a conscious decision to integrate sustainability into your daily life. Make a positive impact with every stroke. Choose Ecowrite for a writing experience that leaves a mark on paper, not on the planet.
