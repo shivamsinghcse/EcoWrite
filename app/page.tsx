@@ -95,7 +95,7 @@ Sustainability is at our core, from manufacturing to disposal. Choosing Ecowrite
           <br></br>
           <b>Mobile No: +91 9532340629</b>
           <br></br>
-          <b>Made with Love!❤️ Team EcoWrite</b>
+          <b>Made with Love! Team EcoWrite</b>
         </div>
         </div>
     </>
